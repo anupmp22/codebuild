@@ -9,6 +9,8 @@ phases:
       - echo Build started on `date`
       - mvn install
   post_build:
+    commands:
+      - echo Build completed on `date`
 artifacts:
   files:
     - target/gs-spring-boot-0.1.0.jar
