@@ -11,7 +11,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - aws cp s3 target/gs-spring-boot-0.1.0.jar s3://mps3bucket/
+      - aws cp s3 gs-spring-boot-0.1.0.jar s3://mps3bucket/
 artifacts:
   files:
     - target/gs-spring-boot-0.1.0.jar
